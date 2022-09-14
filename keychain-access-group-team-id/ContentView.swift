@@ -9,9 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
+        let bundleSeedId:String = keychain_access_group_team_idApp.bundleSeedID()!
+        
         Text("Hello, world!")
             .padding()
-    }
+
+        Text("Bundle Seed ID: " + bundleSeedId)
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -19,3 +24,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
